@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>Runshaw College</title>
-    <script>
-    function handleInput(element) {
-      element.setAttribute("placeholder", "");
-    }
-  </script>
-  <script src="https://kit.fontawesome.com/8cca80b5d2.js" crossorigin="anonymous"></script>
+    <script>function handleInput(element) {element.setAttribute("placeholder", "");}</script>
+    <script src="https://kit.fontawesome.com/8cca80b5d2.js" crossorigin="anonymous"></script>
   </head>
   <header>
     <div style="background-color: lightgrey;" align="right">
@@ -82,18 +78,20 @@
         <tr>
           <td>WHAT ARE YOU <strong>LOOKING</strong> FOR?</td>                                                   
           <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
           <td>
-            <table style="background-color: white; color: black;">
-              <td>
-                <input type="text" id="mytextbox" name="name" placeholder="Enter subject here" oninput="handleInput(this)">
-              </td>
-              <td style="background-color: red; color: white">
-                <button style="background-color: red; color: white;" type="button">
-                  SEARCH COURSES
-                </button>
-              </td>
-            </table>
+            <div align="right">
+              <table style="background-color: white; color: black;">
+                <td>
+                  <input type="text" id="mytextbox" name="name" placeholder="Enter subject here" oninput="handleInput(this)">
+                </td>
+                <td style="background-color: red; color: white">
+                  <button style="background-color: red; color: white;" type="button">
+                    SEARCH COURSES
+                  </button>
+                </td>
+              </table>
+            </div>
           </td>
           <td>
             <table style="background-color: red; color: white">
@@ -126,8 +124,30 @@
     </div>
   </body>
   <footer>
-    <a href="https://github.com/ABleasdale1" target="_blank">
-      <i class="fa-brands fa-github fa-2xl" style="color: #ff0000;"></i>
-    </a>
+    <table>
+      <tr>
+        <p>Made by ABleasdale1</p>
+        <td>
+          <a href="https://github.com/ABleasdale1" target="lank">
+            <i class="fa-brands fa-github fa-2xl" style="color: #ff0000;"></i>
+          </a>
+        </td>
+        <td>
+          <a href="https://www.youtube.com/channel/UCbrp2sTzPeRK3IhOzYG60eQ" target="_blank">
+            <i class="fa-brands fa-youtube fa-2xl" style="color: #ff0000;"></i>
+          </a>
+        </td>
+        <td>
+          <a href="https://www.linkedin.com/in/alexander-bleasdale-51b954255/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #ff0000;"></i>
+          </a>
+        </td>
+        <td>
+          <a href="https://www.starwars.com/series/the-mandalorian" target="_blank">
+            <i class="fa-brands fa-mandalorian fa-2xl" style="color: #ffffff;"></i>
+          </a>
+        </td>
+      </tr>
+    </table>
   </footer>
 </html>

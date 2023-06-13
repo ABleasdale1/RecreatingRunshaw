@@ -23,25 +23,30 @@
       line-height: 40px;
       cursor: pointer;
     }
-  </style>
-  <script>
-    window.onscroll = function() { scrollFunction() };
-
-    function scrollFunction() {
-      var backToTopButton = document.getElementById("backToTopButton");
-
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopButton.style.display = "block";
-      } else {
-        backToTopButton.style.display = "none";
+    </style>
+    <script>
+      window.onscroll = function() { scrollFunction() };
+  
+      function scrollFunction() {
+        var backToTopButton = document.getElementById("backToTopButton");
+  
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
       }
+  
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <style>
+      .no-underline {
+      text-decoration: none;
     }
-
-    function backToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+    </style>
   </head>
   <header>
     <div style="background-color: lightgrey;" align="right">
@@ -77,14 +82,41 @@
       </table>
     </div>
     <div align="right">
-      <table style="font-size: 28px;">
+      <table style="font-size: 20px;">
         <tr>
-          <td><b>KEY DATES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
-          <td><b>JOBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
-          <td><b>APPLY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
-          <td><b>MY RUNSHAW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
-          <td><b>CONTACT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+          <td>
+            <a href="https://www.runshaw.ac.uk/events/list/" class="no-underline">
+              <b><i class="fa-solid fa-calendar-days" style="color: #000000;"></i>&nbsp;KEY DATES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.runshaw.ac.uk/the-college/jobs/" class="no-underline">
+              <b><i class="fa-solid fa-briefcase" style="color: #000000;"></i>&nbsp;JOBS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.runshaw.ac.uk/study-at-runshaw/apply/" class="no-underline">
+              <b><i class="fa-solid fa-circle-arrow-right" style="color: #000000;"></i>&nbsp;APPLY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.runshaw.ac.uk/my-runshaw/" class="no-underline">
+              <b><i class="fa-regular fa-user" style="color: #000000;"></i>&nbsp;MY RUNSHAW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.runshaw.ac.uk/the-college/contact-us/" class="no-underline">
+              <b><i class="fa-solid fa-phone" style="color: #000000;"></i>&nbsp;CONTACT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            </a>
+          </td>
         </tr>
+      </table>
+      <table>
+        <tr>
+          &nbsp;
+        </tr>
+      </table>
+      <table>
         <tr>
           <td>&nbsp;</td>
           <td>STUDY AT RUNSHAW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
